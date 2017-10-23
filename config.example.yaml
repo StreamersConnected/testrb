@@ -1,0 +1,35 @@
+token: 'Put your token in here' # Don't be a dumbass and leak this
+
+DSN: Use a valid DSN link # Get one from sentry.io
+
+manhole_enable: true
+manhole_bind: 127.0.0.1:7171
+
+state:
+  sync_guild_members: false # wheter or not to sync guild members upon login
+
+web:
+  SECRET_KEY: 'Stronk key/string'
+  CLIENT_SECRET: 'Another stronk key/string'
+  DISCORD_CLIENT_ID: 'Bot's client ID inside here'
+  DISCORD_CLIENT_SECRET: 'Bot's Client secret'
+  DISCORD_API_BASE_URL: 'https://discordapp.com/api'
+  DISCORD_TOKEN_URL: 'https://discordapp.com/api/oauth2/token'
+  DISCORD_AUTH_URL: 'https://discordapp.com/oauth2/authorize'
+  DISCORD_REDIRECT_URI: 'http://192.168.10.107/auth/discord/callback'
+
+bot:
+  commands_enabled: false
+  plugins:
+    - rowboat.plugins.core
+    - rowboat.plugins.modlog
+    - rowboat.plugins.admin
+    - rowboat.plugins.spam
+    - rowboat.plugins.censor
+    - rowboat.plugins.reddit
+    - rowboat.plugins.starboard
+    - rowboat.plugins.utilities
+    - rowboat.plugins.sql
+    - rowboat.plugins.internal
+    - rowboat.plugins.stats
+    - rowboat.plugins.tags

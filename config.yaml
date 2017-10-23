@@ -1,0 +1,35 @@
+token: 'MzcxNTY4MzIwMDMxMjI3OTA0.DM9ZQg.3ggsMADGP3I36irQ2R7BXTKHtsg'
+
+DSN: https://41873c9a46c94e60bf0a72ed1add359a:f6a6f041b82f42e4bbcddc6e592f0b9a@sentry.io/233899
+
+manhole_enable: true
+manhole_bind: 127.0.0.1:7171
+
+state:
+  sync_guild_members: true
+
+web:
+  SECRET_KEY: 'VL54;6J33H3HHHHKJ543H6KJVLKJ5436HV;543K6J;L43K6V;L45'
+  CLIENT_SECRET: 'JV5LK346JVLK5436HVLKH5436V'
+  DISCORD_CLIENT_ID: 371568320031227904
+  DISCORD_CLIENT_SECRET: '9YITM-HUjzNroQ0J8rSGKjmB-4BV81QU'
+  DISCORD_API_BASE_URL: 'https://discordapp.com/api'
+  DISCORD_TOKEN_URL: 'https://discordapp.com/api/oauth2/token'
+  DISCORD_AUTH_URL: 'https://logs.streamersconnected.tv/api/auth/discord/callback' 
+
+bot:
+  commands_enabled: true
+  commands_group_abbrev: true
+  plugins:
+    - rowboat.plugins.core
+    - rowboat.plugins.modlog
+    - rowboat.plugins.admin
+    - rowboat.plugins.spam
+    - rowboat.plugins.censor
+    - rowboat.plugins.reddit
+    - rowboat.plugins.starboard
+    - rowboat.plugins.utilities
+    - rowboat.plugins.sql
+    - rowboat.plugins.internal
+    - rowboat.plugins.stats
+    - rowboat.plugins.tags
